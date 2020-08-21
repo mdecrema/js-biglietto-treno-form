@@ -1,7 +1,19 @@
+.wh {
+  color: #fff;
+}
+
+.f_size_20 {
+  font-size: 20px;
+}
+
+.m_auto {
+  text-align: center;
+}
+
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: #B91450;
 }
 
 .form_container {
@@ -14,12 +26,12 @@
 .form_container_coloumn {
   width: calc(100%/3);
   height: 100px;
-  background-color: green;
+  background-color: #fff;
   float: left;
 }
 
 label {
-  color: red;
+  color: #B91450;
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
@@ -27,13 +39,24 @@ label {
 
 input {
   border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid #B91450;
   padding: 5px;
   text-align: center;
+  color: #B91450;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input:focus {
+  background-color: #B91450;
+  border: 1px solid #000;
+  color: #fff;
 }
 
 select {
   border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid #B91450;
   padding: 5px;
 }
