@@ -87,6 +87,14 @@ select {
   margin-left: 20px;
 }
 
+#bigl_cont {
+  display: none;
+}
+
+#dett_h3 {
+  display: none
+}
+
 .tabella_dettagli {
   width: calc(100% - 40px);
   height: 100px;
