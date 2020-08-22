@@ -80,18 +80,19 @@ select {
   height: 150px;
   background-color: #fff;
   margin: auto;
-  padding: 15px;
 }
 
 .dett_h3 {
   font-size: 14px;
+  margin-left: 20px;
 }
 
 .tabella_dettagli {
-  width: 100%;
+  width: calc(100% - 40px);
   height: 100px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
+  margin: 0 20px;
 }
 
 .fl_left {
