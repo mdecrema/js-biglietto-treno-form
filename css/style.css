@@ -18,9 +18,10 @@
 
 .form_container {
   background-color: #fff;
-  min-width: 1100px;
+  width: 1000px;
   border-radius: 5px;
   text-align: center;
+  margin: 40px auto;
 }
 
 .form_container_coloumn {
@@ -45,13 +46,13 @@ input {
   color: #B91450;
 }
 
-input::placeholder {
-  color: #fff;
-}
-
 input:focus {
   background-color: #B91450;
   border: 1px solid #000;
+  color: #fff;
+}
+
+input:focus::placeholder {
   color: #fff;
 }
 
@@ -59,4 +60,47 @@ select {
   border-radius: 5px;
   border: 1px solid #B91450;
   padding: 5px;
+}
+
+.btn {
+  padding: 5px 15px;
+  background-color: lightgrey;
+  color: #B91450;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: grey;
+}
+
+.biglietto_container {
+  width: 1000px;
+  height: 150px;
+  background-color: #fff;
+  margin: auto;
+  padding: 15px;
+}
+
+.dett_h3 {
+  font-size: 14px;
+}
+
+.tabella_dettagli {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.fl_left {
+  width: calc(100% / 7);
+  height: 100%;
+  float: left;
+  padding: 0 10px;
+}
+
+.nome_pass {
+  background-color: grey;
 }
