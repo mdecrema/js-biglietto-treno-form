@@ -1,4 +1,5 @@
 var btnGenera = document.getElementById("genera");
+var btnAnnulla = document.getElementById("annulla");
 
 btnGenera.addEventListener("click", function() {
   var nome = document.getElementById("nome").value;
@@ -17,7 +18,7 @@ btnGenera.addEventListener("click", function() {
   var prezzoKm = 0.21;
   var totale = km * prezzoKm;
 
-
+if (!isNaN(km) && km!="" && nome!="" && isNaN(nome)) {
   if (eta == 0) {
     var sconto = ((totale * 20) / 100);
     totale = totale - sconto;
@@ -38,6 +39,17 @@ btnGenera.addEventListener("click", function() {
   carrozza.innerHTML = numeroCarrozza;
   codice.innerHTML = codiceCp;
   costo.innerHTML = totale;
+} else {
+  alert("Controlla i campi inseriti e riprova");
+  biglietto_container.style.display = "none";
+  dett_h3.style.display = "none";
+}
+});
 
-
+btnAnnulla.addEventListener("click", function() {
+  biglietto_container.style.display = "none";
+  dett_h3.style.display = "none";
+  document.getElementById("nome").value = "";
+  document.getElementById("km").value = "";
+  document.getElementById("eta").value = 0;
 });
