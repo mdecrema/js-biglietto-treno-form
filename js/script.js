@@ -38,7 +38,7 @@ if (!isNaN(km) && km!="" && nome!="" && isNaN(nome)) {
   passeggero.innerHTML = nome;
   carrozza.innerHTML = numeroCarrozza;
   codice.innerHTML = codiceCp;
-  costo.innerHTML = totale;
+  costo.innerHTML = "€ "+totale;
 } else {
   alert("Controlla i campi inseriti e riprova");
   biglietto_container.style.display = "none";
@@ -47,6 +47,12 @@ if (!isNaN(km) && km!="" && nome!="" && isNaN(nome)) {
 });
 
 btnAnnulla.addEventListener("click", function() {
+  var nome = document.getElementById("nome").value;
+  var km = document.getElementById("km").value;
+  var eta = document.getElementById("eta").value;
+  var biglietto_container = document.getElementById("bigl_cont");
+  var dett_h3 = document.getElementById("dett_h3");
+
   biglietto_container.style.display = "none";
   dett_h3.style.display = "none";
   document.getElementById("nome").value = "";
